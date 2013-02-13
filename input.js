@@ -6,7 +6,7 @@
   };
 
   Input.prototype.calculate = function(a, b) {
-    this.value = this.calculator.add(a, b);
+    this.value = this.calculator.add(parseInt(a), parseInt(b));
   };
 
   Input.prototype._init = function() {
