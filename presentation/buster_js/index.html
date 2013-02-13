@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>buster.js a js testing tool</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="../css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="buster" class="step slide" data-x="-1000" data-y="-1500">
+        <q style="text-align: center;">
+          <img src="./buster.png"/>
+          <div style="font-size: 0.5em">
+            Created by Christian Johansen and August Lillaas
+          </div>
+        </q>
+    </div>
+
+    <div id="motivation" class="step slide" data-x="500" data-y="-1500">
+        <q>
+          <p>Client side testing:</p>
+          <ul>
+            <li> - more complex apps </li>
+            <li> - more code</li>
+            <li> - more bugs</li>
+            <li> - more to test :D</li>
+          </ul>
+        </q>
+    </div>
+
+    <div id="offers" class="step" data-x="0" data-y="0" data-scale="2">
+      Setting up buster and simple functional testing.
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+      Integration test, interacting with dom elements.
+    </div>
+
+    <div id="features" class="step slide" data-x="2000" data-y="-1500" data-scale="2">
+        <q>
+          <h1>Neat stuff</h1>
+          <ul style="font-size: 0.5em; line-height: 2em">
+            <li> - Nested scenarios, with iternal setUp/tearDown</li>
+            <li> - Rich set of assertions/refutes</li>
+            <li> - Comes with sinon.js, awesome for mocking</li>
+            <li> - async testing </li>
+          </ul>
+        </q>
+    </div>
+
+    <div id="actual-demo" class="step" data-x="3000" data-y="3000" data-scale="2">
+      <p>
+        Let's look at some test for an actual application.
+      </p>
+    </div>
+
+    <div id="pitfalls" class="step" data-x="6000" data-y="6000" data-scale="2">
+      <h1>Pitfalls</h1>
+      <p>
+        # of test can result in load timeouts
+      <p>
+    </div>
+
+    <div id="resources" class="step" data-x="5000" data-y="3000" data-scale="2">
+      <ul>
+        <li><a href="http://docs.busterjs.org/en/latest/#">Documentation</a></li>
+        <li><a href="http://cjohansen.no/talks/2011/busterjs/#1">Christians slide set</a></li>
+        <li><a href="http://sinonjs.org/">Sinon.js</a></li>
+      <ul>
+    </div>
+
+<script src="../js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
