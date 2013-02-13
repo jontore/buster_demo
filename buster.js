@@ -6,9 +6,10 @@ config["browser test"] = {
   libs: [
   ],
   sources: [
-    "calculator.js"
+    "calculator.js",
+    "input.js"
   ],
   tests: [
-    "test/calculator_test.js"
+    "test/*.js"
   ]
 };
