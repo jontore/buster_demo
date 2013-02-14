@@ -4,6 +4,7 @@ config["browser test"] = {
   env: "browser",
   rootPath: "./",
   libs: [
+    'lib/jquery.js'
   ],
   sources: [
     "calculator.js",
