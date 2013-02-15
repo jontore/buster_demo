@@ -19,5 +19,15 @@ buster.testCase("calculator", {
 
     assert.equals(this.input.value, 3);
   },
-  '// result should be displayed': function() {}
+  'result should be displayed': function() {
+    var button = document.getElementsByTagName("button");
+    var inputs = document.getElementsByTagName("input");
+    inputs[0].value = 1;
+    inputs[1].value = 2;
+    button[0].click();
+
+    var result = document.getElementById("result");
+
+    assert.equals(result.innerHTML, 3);
+  }
 });
