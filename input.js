@@ -7,6 +7,10 @@
 
   Input.prototype.calculate = function(a, b) {
     this.value = this.calculator.add(parseInt(a), parseInt(b));
+    var result = document.createElement('h1');
+    result.id = 'result';
+    result.innerHTML = this.value;
+    document.body.appendChild(result);
   };
 
   Input.prototype._init = function() {
